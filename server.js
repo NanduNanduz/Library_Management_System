@@ -69,8 +69,8 @@ app.put('/products/:id',async(req,res)=>{
     }
 }) 
 
-//delete a product
 
+//delete a product
 app.delete('/products/:id', async(req,res) => {
     try {
         const {id} =  req.params;
