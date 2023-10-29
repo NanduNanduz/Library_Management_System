@@ -12,6 +12,7 @@ app.get('/',(req,res)=>{
     res.send(' hai api');
 })
 
+
 //store the data in db
 app.post('/products', async(req,res)=>{
    try{
@@ -23,6 +24,7 @@ app.post('/products', async(req,res)=>{
     res.status(500).json({message: error.message})
    }
 })
+
 
 //Fetch all products from db
 app.get('/products',async(req,res)=>{
@@ -49,6 +51,7 @@ app.get('/products/:id', async(req,res)=>{
         
     }
 })
+
 
 //update  a product
 app.put('/products/:id',async(req,res)=>{
