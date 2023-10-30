@@ -53,7 +53,7 @@ app.get('/products/:id', async(req,res)=>{
 })
 
 
-//update  a product
+//update a product
 app.put('/products/:id',async(req,res)=>{
     try {
         const {id} = req.params;
@@ -71,6 +71,7 @@ app.put('/products/:id',async(req,res)=>{
         
     }
 }) 
+
 
 
 //delete a product
