@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 //created Schema
+
 const productSchema = mongoose.Schema(
     {
         //fields
@@ -29,6 +30,7 @@ const productSchema = mongoose.Schema(
 )
 
 //creating model
+
 const Product = mongoose.model("Product", productSchema);
 
 module.exports = Product;
