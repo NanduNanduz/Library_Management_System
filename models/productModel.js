@@ -2,8 +2,10 @@ const mongoose = require('mongoose')
 
 //created Schema
 
+
 const productSchema = mongoose.Schema(
     {
+        
         //fields
         name: {
             type: String,
@@ -28,6 +30,7 @@ const productSchema = mongoose.Schema(
     timestamps: true
     }
 )
+
 
 //creating model
 
